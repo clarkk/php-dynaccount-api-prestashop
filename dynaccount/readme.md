@@ -1,1 +1,0 @@
-Dynaccount API integration for Prestashop
