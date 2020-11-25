@@ -205,7 +205,7 @@ class Dynaccount extends Module {
 		$sql = "SELECT * FROM `"._DB_PREFIX_.self::TBL_CACHE."` WHERE is_booked=0 ORDER BY id LIMIT 6";
 		if($cache = Db::getInstance()->ExecuteS($sql)){
 			try{
-				require_once 'Dynaccount_webshop_API.php';
+				require_once 'dynaccount_api\library\Dynaccount_webshop_API.php';
 				$Dyn = new \Dynaccount\Webshop_API(self::DYNACCOUNT_API_ID, self::DYNACCOUNT_API_KEY, self::DYNACCOUNT_API_SECRET);
 				
 				$Dyn->connect();
