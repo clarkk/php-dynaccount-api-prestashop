@@ -1,0 +1,3 @@
+[submodule "dynaccount/dynaccount_api"]
+	path = dynaccount/dynaccount_api
+	url = git@github.com:clarkk/php-dynaccount-api.git
